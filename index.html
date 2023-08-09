@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Usalo! - Prendas  Second Hand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+            <div class="container">
+                <a class="navbar-brand" href="#">Re-Usalo!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Productos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero bg-light text-center py-5">
+            <div class="container">
+                <img src='/assets/img/banner2.png'>
+                <br>
+                <br>
+                <h6>Somos un equipo hermoso con ganas de traerte ropa linda y accesible para darle una segunda oportunidad</h6>
+                <br>
+                <br>
+                <button id="botonComprar" class="btn btn-primary btn-agregar-carrito">
+                    <a href="carrito.html" class="text-white text-decoration-none">Ver Carrito</a>
+                </button>
+            </div>
+        </section>
+        <section class="featured-products py-5">
+            <div class="container">
+                <h2>Productos destacados</h2>
+                <div class="row" id="cards">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Reusalo - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

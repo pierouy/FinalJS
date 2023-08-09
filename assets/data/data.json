@@ -1,0 +1,39 @@
+[
+    {
+        "codigo": 1,
+        "nombre": "Musculosa Fucsia",
+        "precio": 100,
+        "imagen": "assets/img/producto1.png"
+    },
+    {
+        "codigo": 2,
+        "nombre": "Buzo manga corta Allie",
+        "precio": 200,
+        "imagen": "assets/img/producto2.png"
+    },
+    {
+        "codigo": 3,
+        "nombre": "Botines Rusty",
+        "precio": 400,
+        "imagen": "assets/img/producto3.png"
+    },
+    {
+        "codigo": 4,
+        "nombre": "Short de jean Gringa",
+        "precio": 200,
+        "imagen": "assets/img/producto4.png"
+    },
+    {
+        "codigo": 5,
+        "nombre": "Blazer de pana forrado",
+        "precio": 400,
+        "imagen": "assets/img/producto5.png"
+    },
+    {
+        "codigo": 6,
+        "nombre": "Zapatos korium",
+        "precio": 400,
+        "imagen": "assets/img/producto6.png"
+    }
+
+]
