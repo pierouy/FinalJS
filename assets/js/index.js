@@ -25,25 +25,27 @@ fetch('assets/data/data.json')  // Ruta ajustada
                     <div class="card-body">
                         <h3 class="card-title">${productos[i].nombre}</h3>
                         <p class="card-text">$${productos[i].precio}</p>
-                        <button class="btn btn-primary btn-agregar-carrito" onclick="agregarAlCarrito(${i})">Agregar al Carrito</button>
+                        <button class="btn btn-primary btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </div>
             `;
             cards.appendChild(div);
         }
+
+        const btns = document.querySelectorAll('.btn-agregar-carrito');
+        btns.forEach((btn, index) => {
+            btn.onclick = () => agregarAlCarrito(index);
+        });
     })
     .catch(error => {
         console.error('Error al cargar los productos:', error);
     });
 
 function agregarAlCarrito(indice) {
-    console.log(indice)
-    let carrito = JSON.parse(sessionStorage.getItem('carrito')) || [];
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
     // Obtengo el producto usando el índice
     const producto = productos[indice];
-    console.log(producto)
-    console.log(producto.codigo)
 
     //Veo si ya está en el carrito
     const productoEnCarrito = carrito.find(item => item.codigo === producto.codigo);
@@ -51,7 +53,7 @@ function agregarAlCarrito(indice) {
     if (!productoEnCarrito) {
         // Si no está, lo agrego
         carrito.push(new Producto(producto.codigo, producto.nombre, producto.precio, producto.imagen));
-        sessionStorage.setItem('carrito', JSON.stringify(carrito));
+        localStorage.setItem('carrito', JSON.stringify(carrito));
 
         // Mostrar notificación con Toastify
         Toastify({

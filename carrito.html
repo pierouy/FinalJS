@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Re-Usalo!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,7 +31,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>  
+            </div>
         </nav>
     </header>
     <main class="container mt-5">
@@ -38,11 +42,14 @@
             <!-- Acá muestro el contenido del carrito -->
         </div>
         <button id="botonVaciarCarrito" class="btn btn-danger">Vaciar Carrito</button>
+        <button id="finalizarcompra" class="btn btn-success" disabled>Concretar compra</button>
     </main>
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 Carrito de Compras</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/carrito.js"></script>
 </body>
+
 </html>
